@@ -28,7 +28,9 @@ files
 ## This first line will likely take a few seconds. Be patient!
 
 activity <- read.csv(file.path(path, files[1]))
+
 sapply(activity, class)
 
-# Read date variabel as date
+# Read date variable as date
 activity$date <- as.Date(activity$date, "%Y-%m-%d")
+
